@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.counter-container {
+    max-width: 300px;
+    margin: auto;
+}
+
+.counter {
+    color: yellow;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.button-image {
+    border-radius: 50%;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.button-image.shrink {
+    transform: scale(0.8); /* Shrinking the image */
+}
+
+.button-image.expand {
+    transform: scale(1.2); /* Expanding the image */
+}
+
+.button:hover .button-image {
+    /* Optional hover effect */
+    transform: scale(1.1);
+}
